@@ -1,5 +1,5 @@
 # Screen Design
 
 ### Home Page
-![Home Page](Website Images/Home Page.png)
+![Home Page](streamSearchProject/Website Images/Home Page.png)
 
