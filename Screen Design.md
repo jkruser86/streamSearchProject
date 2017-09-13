@@ -1,5 +1,5 @@
 # Screen Design
 
 ### Home Page
-![Home Page](streamSearchProject/Website Images/Home Page.png)
+![Home Page](https://github.com/jkruser86/streamSearchProject/blob/master/Website%20Images/Home%20Page.png)
 
