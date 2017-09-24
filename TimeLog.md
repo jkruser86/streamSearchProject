@@ -13,3 +13,9 @@
 | 09/15/17 | Worked on trying to get Bootstrap setup to no avail | 2 hours | |
 | 09/16/17 | Continued to work on getting Boostrap working | 2.5 hours | Screwed up tomcat bad enough that it was no longer pointing to my index.jsp for any of my projects anymore. |
 | 09/17/17 | Watched some of the week 4 videos and reverted Linux | 4 hours | Had to revert to my last backup of Linux since I couldn't figure out how to get tomcat to point to the correct index.jsp. |
+| 09/18/17 | Finished week 4 videos | 2 hours | |
+| 09/19/17 | Spent some more time figuring out bootstrap | 2 hours | |
+| 09/20/17 | Finished week 4 exercise | 2 hours | |
+| 09/21/17 | Started week 5 videos and registered for AWS | 1 hour | |
+| 09/22/17 | Continued week 5 videos and AWS setup | 2 hours | Got hung up setting up mySQL |
+| 09/23/17 | Worked on getting some of my jsps setup a bit | 2 hours | |
