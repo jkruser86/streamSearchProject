@@ -8,7 +8,7 @@
         <c:import url="main-bar.jsp" />
         <div class="content">
             <p>
-                <form method="GET" action="">
+                <form method="GET" action="/search-results">
                     <label for="searchTerm">Movie to Search for</label>
                     <input type="text" name="term" id="searchTerm"/>
                     <br />
