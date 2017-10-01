@@ -1,2 +1,3 @@
 edu/matc/LoginServlet.class
 edu/matc/SearchResultsServlet.class
+edu/matc/CreateUserServlet.class
