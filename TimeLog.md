@@ -19,3 +19,10 @@
 | 09/21/17 | Started week 5 videos and registered for AWS | 1 hour | |
 | 09/22/17 | Continued week 5 videos and AWS setup | 2 hours | Got hung up setting up mySQL |
 | 09/23/17 | Worked on getting some of my jsps setup a bit | 2 hours | |
+| 09/24|17 | Worked on exercise 5 a bit | 2 hours | |
+| 09/25/17 | Finished up exercise 5 | 2 hours | |
+| 09/26/17 | Continued working on getting project to have a few jsps | 2 hours | |
+| 09/27/17 | Worked on reviews for both presentations and Sam's project | 2 hours | |
+| 09/29/17 | Watched week 6 videos and worked on demo | 2 hours | |
+| 09/30/17 | Worked on getting my database setup for my project | 2 hours | Took a while due to reworking a few ideas in my head |
+| 10/01/17 | | | |
