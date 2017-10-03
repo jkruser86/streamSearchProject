@@ -8,7 +8,7 @@
         <c:import url="main-bar.jsp" />
         <div class="content">
             <p>
-                <form method="GET" action="/success">
+                <form method="GET" action="/submit">
                     <label for="userName">User Name</label>
                     <input type="text" name="user" id="userName" />
                     <br />

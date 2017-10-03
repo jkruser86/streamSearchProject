@@ -1,3 +1,7 @@
-edu/matc/LoginServlet.class
-edu/matc/SearchResultsServlet.class
-edu/matc/CreateUserServlet.class
+edu/matc/streamSearch/entity/UserRoles.class
+edu/matc/streamSearch/SearchResultsServlet.class
+edu/matc/streamSearch/persistence/SessionFactoryProvider.class
+edu/matc/streamSearch/CreateUserSubmitServlet.class
+edu/matc/streamSearch/CreateUserServlet.class
+edu/matc/streamSearch/LoginServlet.class
+edu/matc/streamSearch/entity/Users.class

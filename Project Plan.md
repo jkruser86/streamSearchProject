@@ -11,22 +11,22 @@
 - [X] Complete screen design
 
 ### Week 3
-- [ ] Time log entries
-- [ ] Determine possible Web Services or APIs to use
+- [X] Time log entries
+- [X] Determine possible Web Services or APIs to use
 - [ ] Complete database design
 - [ ] Document application flow
-- [ ] Begin creating JSPs
-- [ ] Determine independent research topic
+- [X] Begin creating JSPs
+- [X] Determine independent research topic
 
 ### Week 4
-- [ ] Time log entries
+- [X] Time log entries
 - [ ] Build database
 - [ ] Finish up the shell of all JSPs
 - [ ] Set up logging
 - [ ] Set up unit testing
 
 ### Week 5
-- [ ] Time log entries
+- [X] Time log entries
 - [ ] Add hibernate functionality
 - [ ] Deploy to AWS
 - [ ] Create DAO

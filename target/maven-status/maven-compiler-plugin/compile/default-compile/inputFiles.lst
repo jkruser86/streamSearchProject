@@ -1,3 +1,7 @@
-/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/SearchResultsServlet.java
-/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/CreateUserServlet.java
-/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/LoginServlet.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/SearchResultsServlet.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/LoginServlet.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/CreateUserServlet.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/entity/Users.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/entity/UserRoles.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/CreateUserSubmitServlet.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/persistence/SessionFactoryProvider.java
