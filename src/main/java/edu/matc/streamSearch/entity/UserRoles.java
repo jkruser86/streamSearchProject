@@ -3,7 +3,7 @@ package edu.matc.streamSearch.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user_roles", schema = "streamsearch")
+@Table(name = "user_roles")
 public class UserRoles {
     private String userName;
     private String roleName;
