@@ -22,7 +22,7 @@
 - [X] Time log entries
 - [ ] Build database
 - [ ] Finish up the shell of all JSPs
-- [ ] Set up logging
+- [X] Set up logging
 - [ ] Set up unit testing
 
 ### Week 5

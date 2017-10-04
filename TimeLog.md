@@ -25,4 +25,6 @@
 | 09/27/17 | Worked on reviews for both presentations and Sam's project | 2 hours | |
 | 09/29/17 | Watched week 6 videos and worked on demo | 2 hours | |
 | 09/30/17 | Worked on getting my database setup for my project | 2 hours | Took a while due to reworking a few ideas in my head |
-| 10/01/17 | | | |
+| 10/01/17 | Worked on getting hibernate setup | 2 hours | |
+| 10/02/17 | Worked on getting the daos setup for my tables | 2 hours | |
+| 10/03/17 | Got the daos finished for the tables I have setup and created and ran the tests for them | 3 hours | |
