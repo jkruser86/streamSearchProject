@@ -53,7 +53,7 @@ public class UserDao {
      *
      * @param user The user to add
      */
-    public void addUser (User user) {
+    public void addUser(User user) {
         Transaction transaction = null;
         Session session = null;
 
@@ -77,4 +77,5 @@ public class UserDao {
             }
         }
     }
+
 }

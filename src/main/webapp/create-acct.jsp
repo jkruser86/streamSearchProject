@@ -8,7 +8,13 @@
         <c:import url="main-bar.jsp" />
         <div class="content">
             <p>
-                <form method="GET" action="/submit">
+                <c:if test="${createUserError != ''}">
+                    <h3>${createUserError}</h3>
+                </c:if>
+                <c:if test="${createUserError == ''}">
+                    <h3>empty error</h3>
+                </c:if>
+                <form method="POST" action="/submit">
                     <label for="userName">User Name</label>
                     <input type="text" name="user" id="userName" />
                     <br />

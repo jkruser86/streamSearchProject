@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet (
@@ -20,5 +21,8 @@ public class CreateUserServlet extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
 
         dispatcher.forward(req, resp);
+
+        HttpSession session = req.getSession();
+        session.setAttribute("createUserError", "");
     }
 }
