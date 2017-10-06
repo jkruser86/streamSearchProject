@@ -7,3 +7,4 @@
 /home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/CreateUserSubmitServlet.java
 /home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/persistence/SessionFactoryProvider.java
 /home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/persistence/UserRolesDao.java
+/home/student/Projects/StreamSearchProject/streamSearchProject/src/main/java/edu/matc/streamSearch/AccountServlet.java

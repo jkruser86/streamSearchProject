@@ -29,3 +29,4 @@
 | 10/02/17 | Worked on getting the daos setup for my tables | 2 hours | |
 | 10/03/17 | Got the daos finished for the tables I have setup and created and ran the tests for them | 3 hours | |
 | 10/04/17 | Got the create user page to write data to the database and tried to get JSTL to work | 3 hours | Can't figure out why JSTL will not work so will have to investigate more |
+| 10/05/17 | Got the JSTL working and starting working on authentication | 3 hours | Can't get authentication working. No page will load after I added it |

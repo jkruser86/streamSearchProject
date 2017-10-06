@@ -8,14 +8,13 @@
 <c:import url="main-bar.jsp" />
 <div class="content">
     <p>
-        <form method="POST" action="/account">
-            <label for="userName">User Name</label>
-            <input type="text" name="user" id="userName" />
-            <br />
-            <label for="password">Password</label>
-            <input type="text" name="pass" id="password" />
-            <input type="submit" value="Login" />
-        </form>
+        <FORM ACTION="j_security_check" METHOD="POST">
+            <TABLE>
+                <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
+                <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
+                <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
+            </TABLE>
+        </FORM>
     </p>
 </div>
 </body>

@@ -5,5 +5,6 @@ edu/matc/streamSearch/persistence/SessionFactoryProvider.class
 edu/matc/streamSearch/entity/User.class
 edu/matc/streamSearch/CreateUserSubmitServlet.class
 edu/matc/streamSearch/CreateUserServlet.class
+edu/matc/streamSearch/AccountServlet.class
 edu/matc/streamSearch/LoginServlet.class
 edu/matc/streamSearch/persistence/UserRolesDao.class
