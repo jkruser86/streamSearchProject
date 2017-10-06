@@ -8,7 +8,14 @@
 <c:import url="main-bar.jsp" />
 <div class="content">
     <p>
-    <h2>Login</h2>
+        <form method="POST" action="/account">
+            <label for="userName">User Name</label>
+            <input type="text" name="user" id="userName" />
+            <br />
+            <label for="password">Password</label>
+            <input type="text" name="pass" id="password" />
+            <input type="submit" value="Login" />
+        </form>
     </p>
 </div>
 </body>

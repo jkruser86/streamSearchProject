@@ -52,15 +52,10 @@ public class CreateUserSubmitServlet extends HttpServlet {
             userRoles.setRoleName("user");
 
             userRolesDao.addUserRoles(userRoles);
+
+            HttpSession session = req.getSession();
+            session.setAttribute("userSignup","Thanks for signing up. Please sign in to your account");
+            resp.sendRedirect("/login");
         }
-
-        //System.out.println("userName: " + userName);
-        //System.out.println("password: " + password);
-        //System.out.println("password2: " + password2);
-        //System.out.println("email: " + email);
-
-        //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
-
-        //dispatcher.forward(req, resp);
     }
 }
