@@ -11,7 +11,7 @@
                 <c:if test="${createUserError != ''}">
                     <h3>${createUserError}</h3>
                 </c:if>
-                <form method="POST" action="/submit">
+                <form method="POST" action="submit">
                     <label for="userName">User Name</label>
                     <input type="text" name="user" id="userName" />
                     <br />

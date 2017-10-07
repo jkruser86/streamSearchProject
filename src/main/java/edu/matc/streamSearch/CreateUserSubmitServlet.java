@@ -38,7 +38,7 @@ public class CreateUserSubmitServlet extends HttpServlet {
         if (user != null) {
             HttpSession session = req.getSession();
             session.setAttribute("createUserError", "Username already exists");
-            resp.sendRedirect("/create-acct");
+            resp.sendRedirect("create-acct");
             //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/create-acct");
         } else {
             user = new User();
@@ -55,7 +55,7 @@ public class CreateUserSubmitServlet extends HttpServlet {
 
             HttpSession session = req.getSession();
             session.setAttribute("userSignup","Thanks for signing up. Please sign in to your account");
-            resp.sendRedirect("/login");
+            resp.sendRedirect("login");
         }
     }
 }
