@@ -37,20 +37,20 @@ public class UserRolesDaoTest {
     @Test
     public void addUserRolesTest() throws Exception {
         User user = new User();
-        user.setUserName("testuser4");
-        user.setUserPass("password4");
-        user.setUserEmail("test4@test.edu");
+        user.setUserName("testuser5");
+        user.setUserPass("password5");
+        user.setUserEmail("test5@test.edu");
 
         UserDao userDao = new UserDao();
         userDao.addUser(user);
 
         UserRoles insertedUserRole = new UserRoles();
-        insertedUserRole.setUserName("testuser4");
+        insertedUserRole.setUserName("testuser5");
         insertedUserRole.setRoleName("user");
 
         dao.addUserRoles(insertedUserRole);
 
-        UserRoles returnedUserRole = dao.getUserRoles("testuser4");
+        UserRoles returnedUserRole = dao.getUserRoles("testuser5");
         assertTrue(insertedUserRole.equals(returnedUserRole));
     }
 

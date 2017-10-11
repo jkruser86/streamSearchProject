@@ -7,11 +7,11 @@
         version="2.5">
   <display-name>Archetype Created Web Application</display-name>
 
-  <!-- Protect everything within the "investing" directory. -->
+  <!-- Protect the account screen. -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>account</web-resource-name>
-      <url-pattern>/account.jsp</url-pattern>
+      <url-pattern>/account</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>
@@ -26,8 +26,8 @@
   <login-config>
     <auth-method>FORM</auth-method>
     <form-login-config>
-      <form-login-page>/login.jsp</form-login-page>
-      <form-error-page>/create-acct.jsp</form-error-page>
+      <form-login-page>/login</form-login-page>
+      <form-error-page>/create-acct</form-error-page>
     </form-login-config>
   </login-config>
 </web-app>

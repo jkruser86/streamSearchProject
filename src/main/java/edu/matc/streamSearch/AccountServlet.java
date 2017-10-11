@@ -14,7 +14,7 @@ import java.io.IOException;
 )
 public class AccountServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String url = "/account.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
 
