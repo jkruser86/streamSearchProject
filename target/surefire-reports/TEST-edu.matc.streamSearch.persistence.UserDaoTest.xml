@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="edu.matc.streamSearch.persistence.UserDaoTest" time="4.742" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="edu.matc.streamSearch.persistence.UserDaoTest" time="6.186" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.4.0-96-generic"/>
+    <property name="os.version" value="4.4.0-97-generic"/>
     <property name="user.home" value="/home/student"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="edu.matc.streamSearch.persistence.UserDaoTest" name="addUserTest" time="4.685"/>
-  <testcase classname="edu.matc.streamSearch.persistence.UserDaoTest" name="getAllUsersTest" time="0.048"/>
-  <testcase classname="edu.matc.streamSearch.persistence.UserDaoTest" name="getUserTest" time="0.009"/>
+  <testcase classname="edu.matc.streamSearch.persistence.UserDaoTest" name="addUserTest" time="6.117"/>
+  <testcase classname="edu.matc.streamSearch.persistence.UserDaoTest" name="getAllUsersTest" time="0.061"/>
+  <testcase classname="edu.matc.streamSearch.persistence.UserDaoTest" name="getUserTest" time="0.008"/>
 </testsuite>
