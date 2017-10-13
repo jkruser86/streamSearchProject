@@ -1,4 +1,4 @@
-package edu.matc.streamSearch;
+package edu.matc.streamSearch.controller;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

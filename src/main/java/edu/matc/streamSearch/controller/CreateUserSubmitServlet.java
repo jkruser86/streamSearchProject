@@ -1,4 +1,4 @@
-package edu.matc.streamSearch;
+package edu.matc.streamSearch.controller;
 
 import edu.matc.streamSearch.entity.*;
 import edu.matc.streamSearch.persistence.*;
