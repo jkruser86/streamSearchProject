@@ -34,3 +34,7 @@
 | 10/07/17 | Started viewing week 7 videos and doing activities | 2 hours | |
 | 10/09/17 | Was able to get authentication working successfully in my project | 2 hours | |
 | 10/10/17 | Cleaned up some stuff I was playing with to get authentication working | 1 hour | |
+| 10/11/17 | Worked on getting form validation working | 1 hour | |
+| 10/12/17 | Continued to work on getting form validation working | 1 hour | |
+| 10/13/17 | Worked on week 8 videos and activities | 2 hours | |
+| 10/14/17 | Cleaned up the code for my jsps and got bootstrap form validation working | 2 hours | Still want to check for username availability within the form |

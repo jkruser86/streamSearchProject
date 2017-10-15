@@ -15,7 +15,7 @@ import java.io.IOException;
 )
 public class CreateUserServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String url = "/create-acct.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
