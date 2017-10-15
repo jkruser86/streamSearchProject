@@ -10,19 +10,19 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet (
-        name = "create-acct",
-        urlPatterns = {"/create-acct"}
+        name = "logout",
+        urlPatterns = {"/logout"}
 )
-public class CreateUserServlet extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String url = "/create-acct.jsp";
-
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-
-        dispatcher.forward(req, resp);
 
         HttpSession session = req.getSession();
-        //session.setAttribute("createUserError", "");
+        session.invalidate();
+
+
+        String url = "/logout.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(req, resp);
     }
 }
