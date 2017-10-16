@@ -1,0 +1,12 @@
+<%@include file="taglib.jsp"%>
+<c:set var="pageTitle" value="StreamSearch - Login Failed" />
+<%@include file="head.jsp"%>
+
+<html>
+<body>
+<div id="wrap">
+    <c:import url="main-bar.jsp" />
+    <c:import url="content-failed-login.jsp" />
+</div>
+</body>
+</html>

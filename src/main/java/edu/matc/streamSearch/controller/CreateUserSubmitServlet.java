@@ -28,9 +28,8 @@ public class CreateUserSubmitServlet extends HttpServlet {
         userDao = new UserDao();
         userRolesDao = new UserRolesDao();
 
-        String userName = req.getParameter("user");
-        String password = req.getParameter("pass");
-        String password2 = req.getParameter("pass2");
+        String userName = req.getParameter("userName");
+        String password = req.getParameter("password");
         String email = req.getParameter("email");
 
         user = userDao.getUser(userName);

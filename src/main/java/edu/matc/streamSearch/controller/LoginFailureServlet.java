@@ -15,15 +15,11 @@ import java.io.IOException;
 )
 public class LoginFailureServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String url = "/login.jsp";
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String url = "/failed-login.jsp";
 
-        HttpSession session = req.getSession();
-        session.setAttribute("loginFailed",true);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
 
-        resp.sendRedirect(url);
-        //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-
-        //dispatcher.forward(req, resp);
+        dispatcher.forward(req, resp);
     }
 }
