@@ -5,10 +5,6 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="/streamsearch">StreamSearch</a>
             </div>
-            <!-- <ul class="nav navbar-nav">
-                <li><a href="account">Login</a></li>
-                <li><a href="create-acct">Create Account</a></li>
-            </ul> -->
 
                 <ul class="nav navbar-nav navbar-right">
                     <c:choose>
