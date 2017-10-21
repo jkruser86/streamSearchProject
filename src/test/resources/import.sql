@@ -16,27 +16,9 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
---
--- Table structure for table `user_roles`
---
+DELETE FROM user_roles;
 
-DROP TABLE IF EXISTS `user_roles`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
---
--- Table structure for table `user`
---
-
-DROP TABLE IF EXISTS `user`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (`user_name` varchar(15) NOT NULL,`user_pass` varchar(15) NOT NULL,`user_email` varchar(60) NOT NULL,PRIMARY KEY (`user_name`),UNIQUE KEY `uni_user_email` (`user_email`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
-CREATE TABLE `user_roles` (`user_name` varchar(15) NOT NULL,`role_name` varchar(15) NOT NULL,PRIMARY KEY (`user_name`),KEY `fk_user_name` (`user_name`),CONSTRAINT `fk_user_name` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
+DELETE FROM user;
 --
 -- Dumping data for table `user`
 --

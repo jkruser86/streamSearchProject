@@ -1,5 +1,7 @@
 package edu.matc.streamSearch.controller;
 
+import edu.matc.streamSearch.persistence.UserDao;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,6 +17,10 @@ import java.io.IOException;
 public class AccountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        UserDao userDao = new UserDao();
+
+        req.setAttribute("user", userDao.getUser(req.getRemoteUser()));
         String url = "/account.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
 

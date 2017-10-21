@@ -26,7 +26,7 @@
             import.sql is your db dump -->
 
         <!-- List the annotated entity class/es -->
-
+        <mapping class="edu.matc.streamSearch.entity.Search"/>
         <mapping class="edu.matc.streamSearch.entity.User"/>
         <mapping class="edu.matc.streamSearch.entity.UserRoles"/>
 

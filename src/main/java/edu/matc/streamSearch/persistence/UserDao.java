@@ -5,6 +5,12 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Restrictions;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+
 
 import java.util.*;
 
@@ -18,9 +24,21 @@ public class UserDao {
      */
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<User>();
-        Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        users = session.createCriteria(User.class).list();
-        session.close();
+        Session session = null;
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            users = session.createCriteria(User.class).list();
+        } catch (HibernateException he) {
+            log.error("Error retrieving all users", he);
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        //Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        //users = session.createCriteria(User.class).list();
+        //session.close();
         return users;
     }
 

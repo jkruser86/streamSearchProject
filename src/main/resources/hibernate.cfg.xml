@@ -13,12 +13,15 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/streamsearch</property>
         <property name="connection.username">root</property>
         <property name="connection.password">student</property>
+        <!--<property name="connection.username">root</property>
+        <property name="connection.password">uBUs4XoxU9UsEw</property> -->
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
+        <mapping class="edu.matc.streamSearch.entity.Search"/>
         <mapping class="edu.matc.streamSearch.entity.User"/>
         <mapping class="edu.matc.streamSearch.entity.UserRoles"/>
 
