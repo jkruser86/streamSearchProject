@@ -11,8 +11,6 @@
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/streamsearch</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">student</property>
         <!--<property name="connection.username">root</property>
         <property name="connection.password">uBUs4XoxU9UsEw</property> -->
 
@@ -21,11 +19,11 @@
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
+
+        <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.streamSearch.entity.Search"/>
         <mapping class="edu.matc.streamSearch.entity.User"/>
         <mapping class="edu.matc.streamSearch.entity.UserRoles"/>
-
-        <!-- List the annotated entity class/es -->
 
 
     </session-factory>

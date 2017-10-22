@@ -1,11 +1,9 @@
 package edu.matc.streamSearch.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "search")
 public class Search {
     private String userName;
     private String searchTerm;

@@ -21,7 +21,7 @@
         <property name="show_sql">true</property>
 
         <!-- reload the db before each test -->
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <!--<property name="hibernate.hbm2ddl.auto">create-drop</property>-->
         <!--NOTE: to load data before each test, also add import.sql to test resources where
             import.sql is your db dump -->
 

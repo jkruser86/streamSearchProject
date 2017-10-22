@@ -2,10 +2,7 @@ package edu.matc.streamSearch.persistence;
 
 import edu.matc.streamSearch.entity.*;
 import org.apache.log4j.Logger;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.Criteria;
+import org.hibernate.*;
 import org.hibernate.criterion.Restrictions;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -36,9 +33,7 @@ public class UserDao {
                 session.close();
             }
         }
-        //Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        //users = session.createCriteria(User.class).list();
-        //session.close();
+
         return users;
     }
 
@@ -96,4 +91,60 @@ public class UserDao {
         }
     }
 
+    /**
+     * This paragraph deletes the User from the table
+     *
+     * @param userName The user to delete
+     */
+    public void deleteUser(String userName) {
+        Session session = null;
+        Transaction transaction = null;
+        User user = new User();
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            user = (User) session.get(User.class, userName);
+            session.delete(user);
+            transaction.commit();
+        } catch (HibernateException he) {
+            log.error("Error deleting username: " + userName, he);
+            if (transaction != null) {
+                try {
+                    transaction.rollback();
+                } catch (HibernateException he2) {
+                    log.error("Error rolling back after failed delete", he2);
+                }
+            }
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+    }
+
+    public void updateUser(User user) {
+        Session session = null;
+        Transaction transaction = null;
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            session.saveOrUpdate(user);
+            transaction.commit();
+        } catch (HibernateException he) {
+            log.error("Error saving update of user " + user, he);
+            if (transaction != null) {
+                try {
+                    transaction.rollback();
+                } catch (HibernateException he2) {
+                    log.error("Error rolling back after failed update", he2);
+                }
+            }
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+    }
 }

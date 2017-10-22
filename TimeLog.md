@@ -38,3 +38,9 @@
 | 10/12/17 | Continued to work on getting form validation working | 1 hour | |
 | 10/13/17 | Worked on week 8 videos and activities | 2 hours | |
 | 10/14/17 | Cleaned up the code for my jsps and got bootstrap form validation working | 2 hours | Still want to check for username availability within the form |
+| 10/15/17 | Worked on cleaning up the main bar | 2 hours | |
+| 10/16/17 | Tried getting my import.sql to work correctly | 2 hours | Ended up screwing up my hibernate so nothing was working |
+| 10/17/17 | Had to fix my hibernate so that it would work again | 3 hours | |
+| 10/18/17 | Worked on getting my project to AWS | 3 hours | Took forever to figure out how to get the jar to the SSH |
+| 10/20/17 | Finally got authentication working through AWS | 2 hours | My jar file got moved empty for some reason |
+| 10/21/17 | Screwed up my database a bit while working so cleaned that up | 2 hours | |

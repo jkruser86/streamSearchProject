@@ -8,6 +8,7 @@ public class User {
     private String userName;
     private String userPass;
     private String userEmail;
+    private Search searchByUserName;
 
     @Id
     @Column(name = "user_name", nullable = false, length = 15)
@@ -60,4 +61,13 @@ public class User {
         result = 31 * result + (userEmail != null ? userEmail.hashCode() : 0);
         return result;
     }
+
+    /**@OneToOne(mappedBy = "userByUserName")
+    public Search getSearchByUserName() {
+        return searchByUserName;
+    }
+
+    public void setSearchByUserName(Search searchByUserName) {
+        this.searchByUserName = searchByUserName;
+    } */
 }
