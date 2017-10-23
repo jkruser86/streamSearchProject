@@ -15,6 +15,30 @@ public class UserDaoTest {
     @Before
     public void setup() {
         dao = new UserDao();
+
+        dao.deleteUser("testuser1");
+        dao.deleteUser("testuser2");
+        dao.deleteUser("testuser3");
+        dao.deleteUser("testuser4");
+
+        User insertedUser1 = new User();
+        insertedUser1.setUserName("testuser1");
+        insertedUser1.setUserPass("password1");
+        insertedUser1.setUserEmail("test1@test.edu");
+
+        User insertedUser2 = new User();
+        insertedUser2.setUserName("testuser2");
+        insertedUser2.setUserPass("password2");
+        insertedUser2.setUserEmail("test2@test.edu");
+
+        User insertedUser3 = new User();
+        insertedUser3.setUserName("testuser3");
+        insertedUser3.setUserPass("password3");
+        insertedUser3.setUserEmail("test3@test.edu");
+
+        dao.addUser(insertedUser1);
+        dao.addUser(insertedUser2);
+        dao.addUser(insertedUser3);
     }
 
     @Test
@@ -45,6 +69,32 @@ public class UserDaoTest {
 
         User returnedUser = dao.getUser("testuser4");
         assertTrue(insertedUser.equals(returnedUser));
+    }
+
+    @Test
+    public void deleteUserTest() {
+        List<User> beforeUsers = dao.getAllUsers();
+
+        dao.deleteUser("testuser2");
+        List<User> afterUsers = dao.getAllUsers();
+
+        assertTrue(beforeUsers.size() > afterUsers.size());
+    }
+
+    @Test
+    public void updateUserTest() {
+        User beforeUser = dao.getUser("testuser1");
+        User updatedUser = new User();
+
+        updatedUser.setUserName("testuser1");
+        updatedUser.setUserPass("updatepass1");
+        updatedUser.setUserEmail("updatetest1@test.edu");
+
+        dao.updateUser(updatedUser);
+
+        User afterUser = dao.getUser("testuser1");
+
+        assertTrue(beforeUser.getUserEmail() != afterUser.getUserEmail());
     }
 
 }

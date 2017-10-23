@@ -54,7 +54,7 @@ public class CreateUserSubmitServlet extends HttpServlet {
 
             HttpSession session = req.getSession();
             session.setAttribute("userSignup","Thanks for signing up. Please sign in to your account");
-            resp.sendRedirect("login");
+            resp.sendRedirect("account");
         }
     }
 }

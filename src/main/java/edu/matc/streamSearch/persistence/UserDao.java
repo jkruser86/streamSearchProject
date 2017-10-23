@@ -105,8 +105,10 @@ public class UserDao {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
             user = (User) session.get(User.class, userName);
-            session.delete(user);
-            transaction.commit();
+            if (user != null) {
+                session.delete(user);
+                transaction.commit();
+            }
         } catch (HibernateException he) {
             log.error("Error deleting username: " + userName, he);
             if (transaction != null) {

@@ -44,3 +44,4 @@
 | 10/18/17 | Worked on getting my project to AWS | 3 hours | Took forever to figure out how to get the jar to the SSH |
 | 10/20/17 | Finally got authentication working through AWS | 2 hours | My jar file got moved empty for some reason |
 | 10/21/17 | Screwed up my database a bit while working so cleaned that up | 2 hours | |
+| 10/22/17 | Fixed up some of my tests and worked on getting account deletion working | 2 hours | |
